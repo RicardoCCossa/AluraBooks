@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    position: relative;
 }
 
 .container {
@@ -21,4 +22,14 @@
 
 .container__imagem {
     padding: 1em;
+}
+
+.lista__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked ~ .lista__menu {
+    display: block;
 }
